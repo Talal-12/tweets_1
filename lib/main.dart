@@ -47,33 +47,36 @@ class MyApp extends StatelessWidget {
                 Row(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(left: 25),
+                      padding: const EdgeInsets.only(left: 29),
                       child: Text(
-                        "Comedy is now legal in Twitter",
+                        "Comedy is now legal on Twitter",
                         style: TextStyle(fontSize: 25),
                       ),
                     )
                   ],
                 ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Text(
-                        "5:16 PM . 2022-10-28 .",
-                        style: TextStyle(fontSize: 15),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 28),
+                        child: Text(
+                          "5:16 PM . 2022-10-28 .",
+                          style: TextStyle(fontSize: 15),
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(0.0),
-                      child: Text(
-                        "Twitter for iPhone",
-                        style: TextStyle(
-                            fontSize: 15,
-                            color: Color.fromARGB(255, 5, 199, 247)),
-                      ),
-                    )
-                  ],
+                      Padding(
+                        padding: const EdgeInsets.all(0.0),
+                        child: Text(
+                          "Twitter for iPhone",
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 2, 177, 220)),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
