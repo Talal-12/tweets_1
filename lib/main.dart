@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tweets_1/tweet_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,73 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("Twitter"),
-          ),
-          body: Container(
-            child: Column(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage("assets/musk.jpg"),
-                        radius: 35,
-                      ),
-                    ),
-                    Column(
-                      children: [
-                        Text(
-                          "Elon Musk",
-                          style: TextStyle(
-                              fontSize: 15, fontWeight: FontWeight.bold),
-                        ),
-                        Text("@elonmusk"),
-                      ],
-                    ),
-                  ],
-                ),
-                Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 29),
-                      child: Text(
-                        "Comedy is now legal on Twitter",
-                        style: TextStyle(fontSize: 25),
-                      ),
-                    )
-                  ],
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 28),
-                        child: Text(
-                          "5:16 PM . 2022-10-28 .",
-                          style: TextStyle(fontSize: 15),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(0.0),
-                        child: Text(
-                          "Twitter for iPhone",
-                          style: TextStyle(
-                              fontSize: 15,
-                              color: Color.fromARGB(255, 2, 177, 220)),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ));
+        home: TweetPage());
   }
 }
 
